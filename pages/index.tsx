@@ -3,8 +3,8 @@ import style from "../styles/landing.module.scss"
 
 const Home: NextPage = () => {
   return (
-    <div className={style.e}>
-      Hello
+    <div>
+      
     </div>
   )
 }
