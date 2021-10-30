@@ -31,866 +31,1176 @@ $screen-phone: 400px;
     color: #0000;
 }
 
-@function cold-gray($var: 5) {
+@function cold-gray($var: 5,
+$alpha: 1) {
     @if $var==0 {
-        @return #F8FAFC;
+        @return rgba(#F8FAFC,
+        $alpha);
     }
     @else if $var==1 {
-        @return #F1F5F9;
+        @return rgba(#F1F5F9,
+        $alpha);
     }
     @else if $var==2 {
-        @return #E2E8F0;
+        @return rgba(#E2E8F0,
+        $alpha);
     }
     @else if $var==3 {
-        @return #CBD5E1;
+        @return rgba(#CBD5E1,
+        $alpha);
     }
     @else if $var==4 {
-        @return #94A3B8;
+        @return rgba(#94A3B8,
+        $alpha);
     }
     @else if $var==5 {
-        @return #64748B;
+        @return rgba(#64748B,
+        $alpha);
     }
     @else if $var==6 {
-        @return #475569;
+        @return rgba(#475569,
+        $alpha);
     }
     @else if $var==7 {
-        @return #334155;
+        @return rgba(#334155,
+        $alpha);
     }
     @else if $var==8 {
-        @return #1E293B;
+        @return rgba(#1E293B,
+        $alpha);
     }
     @else if $var==9 {
-        @return #0F172A;
+        @return rgba(#0F172A,
+        $alpha);
     }
 }
 
-@function cool-gray($var: 5) {
+@function cool-gray($var: 5,
+$alpha: 1) {
     @if $var==0 {
-        @return #F9FAFB;
+        @return rgba(#F9FAFB,
+        $alpha);
     }
     @else if $var==1 {
-        @return #F3F4F6;
+        @return rgba(#F3F4F6,
+        $alpha);
     }
     @else if $var==2 {
-        @return #E5E7EB;
+        @return rgba(#E5E7EB,
+        $alpha);
     }
     @else if $var==3 {
-        @return #D1D5DB;
+        @return rgba(#D1D5DB,
+        $alpha);
     }
     @else if $var==4 {
-        @return #9CA3AF;
+        @return rgba(#9CA3AF,
+        $alpha);
     }
     @else if $var==5 {
-        @return #6B7280;
+        @return rgba(#6B7280,
+        $alpha);
     }
     @else if $var==6 {
-        @return #4B5563;
+        @return rgba(#4B5563,
+        $alpha);
     }
     @else if $var==7 {
-        @return #374151;
+        @return rgba(#374151,
+        $alpha);
     }
     @else if $var==8 {
-        @return #1F2937;
+        @return rgba(#1F2937,
+        $alpha);
     }
     @else if $var==9 {
-        @return #111827;
+        @return rgba(#111827,
+        $alpha);
     }
 }
 
-@function gray($var: 5) {
+@function gray($var: 5,
+$alpha: 1) {
     @if $var==0 {
-        @return #FAFAFA;
+        @return rgba(#FAFAFA,
+        $alpha);
     }
     @else if $var==1 {
-        @return #F4F4F5;
+        @return rgba(#F4F4F5,
+        $alpha);
     }
     @else if $var==2 {
-        @return #E4E4E7;
+        @return rgba(#E4E4E7,
+        $alpha);
     }
     @else if $var==3 {
-        @return #D4D4D8;
+        @return rgba(#D4D4D8,
+        $alpha);
     }
     @else if $var==4 {
-        @return #A1A1AA;
+        @return rgba(#A1A1AA,
+        $alpha);
     }
     @else if $var==5 {
-        @return #71717A;
+        @return rgba(#71717A,
+        $alpha);
     }
     @else if $var==6 {
-        @return #52525B;
+        @return rgba(#52525B,
+        $alpha);
     }
     @else if $var==7 {
-        @return #3F3F46;
+        @return rgba(#3F3F46,
+        $alpha);
     }
     @else if $var==8 {
-        @return #27272A;
+        @return rgba(#27272A,
+        $alpha);
     }
     @else if $var==9 {
-        @return #18181B;
+        @return rgba(#18181B,
+        $alpha);
     }
 }
 
-@function true-gray($var: 5) {
+@function true-gray($var: 5,
+$alpha: 1) {
     @if $var==0 {
-        @return #FAFAFA;
+        @return rgba(#FAFAFA,
+        $alpha);
     }
     @else if $var==1 {
-        @return #F5F5F5;
+        @return rgba(#F5F5F5,
+        $alpha);
     }
     @else if $var==2 {
-        @return #E5E5E5;
+        @return rgba(#E5E5E5,
+        $alpha);
     }
     @else if $var==3 {
-        @return #D4D4D4;
+        @return rgba(#D4D4D4,
+        $alpha);
     }
     @else if $var==4 {
-        @return #A3A3A3;
+        @return rgba(#A3A3A3,
+        $alpha);
     }
     @else if $var==5 {
-        @return #737373;
+        @return rgba(#737373,
+        $alpha);
     }
     @else if $var==6 {
-        @return #525252;
+        @return rgba(#525252,
+        $alpha);
     }
     @else if $var==7 {
-        @return #404040;
+        @return rgba(#404040,
+        $alpha);
     }
     @else if $var==8 {
-        @return #262626;
+        @return rgba(#262626,
+        $alpha);
     }
     @else if $var==9 {
-        @return #171717;
+        @return rgba(#171717,
+        $alpha);
     }
 }
 
-@function warm-gray($var: 5) {
+@function warm-gray($var: 5,
+$alpha: 1) {
     @if $var==0 {
-        @return #FAFAF9;
+        @return rgba(#FAFAF9,
+        $alpha);
     }
     @else if $var==1 {
-        @return #F5F5F4;
+        @return rgba(#F5F5F4,
+        $alpha);
     }
     @else if $var==2 {
-        @return #E7E5E4;
+        @return rgba(#E7E5E4,
+        $alpha);
     }
     @else if $var==3 {
-        @return #D6D3D1;
+        @return rgba(#D6D3D1,
+        $alpha);
     }
     @else if $var==4 {
-        @return #A8A29E;
+        @return rgba(#A8A29E,
+        $alpha);
     }
     @else if $var==5 {
-        @return #78716C;
+        @return rgba(#78716C,
+        $alpha);
     }
     @else if $var==6 {
-        @return #57534E;
+        @return rgba(#57534E,
+        $alpha);
     }
     @else if $var==7 {
-        @return #44403C;
+        @return rgba(#44403C,
+        $alpha);
     }
     @else if $var==8 {
-        @return #292524;
+        @return rgba(#292524,
+        $alpha);
     }
     @else if $var==9 {
-        @return #1C1917;
+        @return rgba(#1C1917,
+        $alpha);
     }
 }
 
-@function red($var: 5) {
+@function red($var: 5,
+$alpha: 1) {
     @if $var==0 {
-        @return #FEF2F2;
+        @return rgba(#FEF2F2,
+        $alpha);
     }
     @else if $var==1 {
-        @return #FEE2E2;
+        @return rgba(#FEE2E2,
+        $alpha);
     }
     @else if $var==2 {
-        @return #FECACA;
+        @return rgba(#FECACA,
+        $alpha);
     }
     @else if $var==3 {
-        @return #FCA5A5;
+        @return rgba(#FCA5A5,
+        $alpha);
     }
     @else if $var==4 {
-        @return #F87171;
+        @return rgba(#F87171,
+        $alpha);
     }
     @else if $var==5 {
-        @return #EF4444;
+        @return rgba(#EF4444,
+        $alpha);
     }
     @else if $var==6 {
-        @return #DC2626;
+        @return rgba(#DC2626,
+        $alpha);
     }
     @else if $var==7 {
-        @return #B91C1C;
+        @return rgba(#B91C1C,
+        $alpha);
     }
     @else if $var==8 {
-        @return #991B1B;
+        @return rgba(#991B1B,
+        $alpha);
     }
     @else if $var==9 {
-        @return #7F1D1D;
+        @return rgba(#7F1D1D,
+        $alpha);
     }
 }
 
-@function orange($var: 5) {
+@function orange($var: 5,
+$alpha: 1) {
     @if $var==0 {
-        @return #FFF7ED;
+        @return rgba(#FFF7ED,
+        $alpha);
     }
     @else if $var==1 {
-        @return #FFEDD5;
+        @return rgba(#FFEDD5,
+        $alpha);
     }
     @else if $var==2 {
-        @return #FED7AA;
+        @return rgba(#FED7AA,
+        $alpha);
     }
     @else if $var==3 {
-        @return #FDBA74;
+        @return rgba(#FDBA74,
+        $alpha);
     }
     @else if $var==4 {
-        @return #FB923C;
+        @return rgba(#FB923C,
+        $alpha);
     }
     @else if $var==5 {
-        @return #F97316;
+        @return rgba(#F97316,
+        $alpha);
     }
     @else if $var==6 {
-        @return #D97706;
+        @return rgba(#D97706,
+        $alpha);
     }
     @else if $var==7 {
-        @return #B45309;
+        @return rgba(#B45309,
+        $alpha);
     }
     @else if $var==8 {
-        @return #92400E;
+        @return rgba(#92400E,
+        $alpha);
     }
     @else if $var==9 {
-        @return #78350F;
+        @return rgba(#78350F,
+        $alpha);
     }
 }
 
-@function amber($var: 5) {
+@function amber($var: 5,
+$alpha: 1) {
     @if $var==0 {
-        @return #FFFBEB;
+        @return rgba(#FFFBEB,
+        $alpha);
     }
     @else if $var==1 {
-        @return #FEF3C7;
+        @return rgba(#FEF3C7,
+        $alpha);
     }
     @else if $var==2 {
-        @return #FDE68A;
+        @return rgba(#FDE68A,
+        $alpha);
     }
     @else if $var==3 {
-        @return #FCD34D;
+        @return rgba(#FCD34D,
+        $alpha);
     }
     @else if $var==4 {
-        @return #FBBF24;
+        @return rgba(#FBBF24,
+        $alpha);
     }
     @else if $var==5 {
-        @return #F59E0B;
+        @return rgba(#F59E0B,
+        $alpha);
     }
     @else if $var==6 {
-        @return #D97706;
+        @return rgba(#D97706,
+        $alpha);
     }
     @else if $var==7 {
-        @return #B45309;
+        @return rgba(#B45309,
+        $alpha);
     }
     @else if $var==8 {
-        @return #92400E;
+        @return rgba(#92400E,
+        $alpha);
     }
     @else if $var==9 {
-        @return #78350F;
+        @return rgba(#78350F,
+        $alpha);
     }
 }
 
-@function yellow($var: 5) {
+@function yellow($var: 5,
+$alpha: 1) {
     @if $var==0 {
-        @return #FEFCE8;
+        @return rgba(#FEFCE8,
+        $alpha);
     }
     @else if $var==1 {
-        @return #FEF9C3;
+        @return rgba(#FEF9C3,
+        $alpha);
     }
     @else if $var==2 {
-        @return #FEF08A;
+        @return rgba(#FEF08A,
+        $alpha);
     }
     @else if $var==3 {
-        @return #FDE047;
+        @return rgba(#FDE047,
+        $alpha);
     }
     @else if $var==4 {
-        @return #FACC15;
+        @return rgba(#FACC15,
+        $alpha);
     }
     @else if $var==5 {
-        @return #EAB308;
+        @return rgba(#EAB308,
+        $alpha);
     }
     @else if $var==6 {
-        @return #CA8A04;
+        @return rgba(#CA8A04,
+        $alpha);
     }
     @else if $var==7 {
-        @return #A16207;
+        @return rgba(#A16207,
+        $alpha);
     }
     @else if $var==8 {
-        @return #854D0E;
+        @return rgba(#854D0E,
+        $alpha);
     }
     @else if $var==9 {
-        @return #713F12;
+        @return rgba(#713F12,
+        $alpha);
     }
 }
 
-@function lime($var: 5) {
+@function lime($var: 5,
+$alpha: 1) {
     @if $var==0 {
-        @return #F7FEE7;
+        @return rgba(#F7FEE7,
+        $alpha);
     }
     @else if $var==1 {
-        @return #ECFCCB;
+        @return rgba(#ECFCCB,
+        $alpha);
     }
     @else if $var==2 {
-        @return #D9F99D;
+        @return rgba(#D9F99D,
+        $alpha);
     }
     @else if $var==3 {
-        @return #BEF264;
+        @return rgba(#BEF264,
+        $alpha);
     }
     @else if $var==4 {
-        @return #A3E635;
+        @return rgba(#A3E635,
+        $alpha);
     }
     @else if $var==5 {
-        @return #84CC16;
+        @return rgba(#84CC16,
+        $alpha);
     }
     @else if $var==6 {
-        @return #65A30D;
+        @return rgba(#65A30D,
+        $alpha);
     }
     @else if $var==7 {
-        @return #4D7C0F;
+        @return rgba(#4D7C0F,
+        $alpha);
     }
     @else if $var==8 {
-        @return #3F6212;
+        @return rgba(#3F6212,
+        $alpha);
     }
     @else if $var==9 {
-        @return #365314;
+        @return rgba(#365314,
+        $alpha);
     }
 }
 
-@function green($var: 5) {
+@function green($var: 5,
+$alpha: 15) {
     @if $var==0 {
-        @return #F0FDF4;
+        @return rgba(#F0FDF4,
+        $alpha);
     }
     @else if $var==1 {
-        @return #DCFCE7;
+        @return rgba(#DCFCE7,
+        $alpha);
     }
     @else if $var==2 {
-        @return #BBF7D0;
+        @return rgba(#BBF7D0,
+        $alpha);
     }
     @else if $var==3 {
-        @return #86EFAC;
+        @return rgba(#86EFAC,
+        $alpha);
     }
     @else if $var==4 {
-        @return #4ADE80;
+        @return rgba(#4ADE80,
+        $alpha);
     }
     @else if $var==5 {
-        @return #22C55E;
+        @return rgba(#22C55E,
+        $alpha);
     }
     @else if $var==6 {
-        @return #16A34A;
+        @return rgba(#16A34A,
+        $alpha);
     }
     @else if $var==7 {
-        @return #15803D;
+        @return rgba(#15803D,
+        $alpha);
     }
     @else if $var==8 {
-        @return #166534;
+        @return rgba(#166534,
+        $alpha);
     }
     @else if $var==9 {
-        @return #14532D;
+        @return rgba(#14532D,
+        $alpha);
     }
 }
 
-@function emerald($var: 5) {
+@function emerald($var: 5,
+$alpha: 1) {
     @if $var==0 {
-        @return #ECFDF5;
+        @return rgba(#ECFDF5,
+        $alpha);
     }
     @else if $var==1 {
-        @return #D1FAE5;
+        @return rgba(#D1FAE5,
+        $alpha);
     }
     @else if $var==2 {
-        @return #A7F3D0;
+        @return rgba(#A7F3D0,
+        $alpha);
     }
     @else if $var==3 {
-        @return #6EE7B7;
+        @return rgba(#6EE7B7,
+        $alpha);
     }
     @else if $var==4 {
-        @return #34D399;
+        @return rgba(#34D399,
+        $alpha);
     }
     @else if $var==5 {
-        @return #10B981;
+        @return rgba(#10B981,
+        $alpha);
     }
     @else if $var==6 {
-        @return #059669;
+        @return rgba(#059669,
+        $alpha);
     }
     @else if $var==7 {
-        @return #047857;
+        @return rgba(#047857,
+        $alpha);
     }
     @else if $var==8 {
-        @return #065F46;
+        @return rgba(#065F46,
+        $alpha);
     }
     @else if $var==9 {
-        @return #064E3B;
+        @return rgba(#064E3B,
+        $alpha);
     }
 }
 
-@function teal($var: 5) {
+@function teal($var: 5,
+$alpha: 1) {
     @if $var==0 {
-        @return #F0FDFA;
+        @return rgba(#F0FDFA,
+        $alpha);
     }
     @else if $var==1 {
-        @return #CCFBF1;
+        @return rgba(#CCFBF1,
+        $alpha);
     }
     @else if $var==2 {
-        @return #99F6E4;
+        @return rgba(#99F6E4,
+        $alpha);
     }
     @else if $var==3 {
-        @return #5EEAD4;
+        @return rgba(#5EEAD4,
+        $alpha);
     }
     @else if $var==4 {
-        @return #2DD4BF;
+        @return rgba(#2DD4BF,
+        $alpha);
     }
     @else if $var==5 {
-        @return #14B8A6;
+        @return rgba(#14B8A6,
+        $alpha);
     }
     @else if $var==6 {
-        @return #0D9488;
+        @return rgba(#0D9488,
+        $alpha);
     }
     @else if $var==7 {
-        @return #0F766E;
+        @return rgba(#0F766E,
+        $alpha);
     }
     @else if $var==8 {
-        @return #115E59;
+        @return rgba(#115E59,
+        $alpha);
     }
     @else if $var==9 {
-        @return #134E4A;
+        @return rgba(#134E4A,
+        $alpha);
     }
 }
 
-@function cyan($var: 5) {
+@function cyan($var: 5,
+$alpha: 1) {
     @if $var==0 {
-        @return #ECFEFF;
+        @return rgba(#ECFEFF,
+        $alpha);
     }
     @else if $var==1 {
-        @return #CFFAFE;
+        @return rgba(#CFFAFE,
+        $alpha);
     }
     @else if $var==2 {
-        @return #A5F3FC;
+        @return rgba(#A5F3FC,
+        $alpha);
     }
     @else if $var==3 {
-        @return #67E8F9;
+        @return rgba(#67E8F9,
+        $alpha);
     }
     @else if $var==4 {
-        @return #22D3EE;
+        @return rgba(#22D3EE,
+        $alpha);
     }
     @else if $var==5 {
-        @return #06B6D4;
+        @return rgba(#06B6D4,
+        $alpha);
     }
     @else if $var==6 {
-        @return #0891B2;
+        @return rgba(#0891B2,
+        $alpha);
     }
     @else if $var==7 {
-        @return #0E7490;
+        @return rgba(#0E7490,
+        $alpha);
     }
     @else if $var==8 {
-        @return #155E75;
+        @return rgba(#155E75,
+        $alpha);
     }
     @else if $var==9 {
-        @return #164E63;
+        @return rgba(#164E63,
+        $alpha);
     }
 }
 
-@function sky($var: 5) {
+@function sky($var: 5,
+$alpha: 1) {
     @if $var==0 {
-        @return #F0F9FF;
+        @return rgba(#F0F9FF,
+        $alpha);
     }
     @else if $var==1 {
-        @return #E0F2FE;
+        @return rgba(#E0F2FE,
+        $alpha);
     }
     @else if $var==2 {
-        @return #BAE6FD;
+        @return rgba(#BAE6FD,
+        $alpha);
     }
     @else if $var==3 {
-        @return #7DD3FC;
+        @return rgba(#7DD3FC,
+        $alpha);
     }
     @else if $var==4 {
-        @return #38BDF8;
+        @return rgba(#38BDF8,
+        $alpha);
     }
     @else if $var==5 {
-        @return #0EA5E9;
+        @return rgba(#0EA5E9,
+        $alpha);
     }
     @else if $var==6 {
-        @return #0284C7;
+        @return rgba(#0284C7,
+        $alpha);
     }
     @else if $var==7 {
-        @return #0369A1;
+        @return rgba(#0369A1,
+        $alpha);
     }
     @else if $var==8 {
-        @return #075985;
+        @return rgba(#075985,
+        $alpha);
     }
     @else if $var==9 {
-        @return #0C4A6E;
+        @return rgba(#0C4A6E,
+        $alpha);
     }
 }
 
-@function blue($var: 5) {
+@function blue($var: 5,
+$alpha: 1) {
     @if $var==0 {
-        @return #EFF6FF;
+        @return rgba(#EFF6FF,
+        $alpha);
     }
     @else if $var==1 {
-        @return #DBEAFE;
+        @return rgba(#DBEAFE,
+        $alpha);
     }
     @else if $var==2 {
-        @return #BFDBFE;
+        @return rgba(#BFDBFE,
+        $alpha);
     }
     @else if $var==3 {
-        @return #93C5FD;
+        @return rgba(#93C5FD,
+        $alpha);
     }
     @else if $var==4 {
-        @return #60A5FA;
+        @return rgba(#60A5FA,
+        $alpha);
     }
     @else if $var==5 {
-        @return #3B82F6;
+        @return rgba(#3B82F6,
+        $alpha);
     }
     @else if $var==6 {
-        @return #2563EB;
+        @return rgba(#2563EB,
+        $alpha);
     }
     @else if $var==7 {
-        @return #1D4ED8;
+        @return rgba(#1D4ED8,
+        $alpha);
     }
     @else if $var==8 {
-        @return #1E40AF;
+        @return rgba(#1E40AF,
+        $alpha);
     }
     @else if $var==9 {
-        @return #1E3A8A;
+        @return rgba(#1E3A8A,
+        $alpha);
     }
 }
 
-@function indigo($var: 5) {
+@function indigo($var: 5,
+$alpha: 1) {
     @if $var==0 {
-        @return #EEF2FF;
+        @return rgba(#EEF2FF,
+        $alpha);
     }
     @else if $var==1 {
-        @return #E0E7FF;
+        @return rgba(#E0E7FF,
+        $alpha);
     }
     @else if $var==2 {
-        @return #C7D2FE;
+        @return rgba(#C7D2FE,
+        $alpha);
     }
     @else if $var==3 {
-        @return #A5B4FC;
+        @return rgba(#A5B4FC,
+        $alpha);
     }
     @else if $var==4 {
-        @return #818CF8;
+        @return rgba(#818CF8,
+        $alpha);
     }
     @else if $var==5 {
-        @return #6366F1;
+        @return rgba(#6366F1,
+        $alpha);
     }
     @else if $var==6 {
-        @return #4F46E5;
+        @return rgba(#4F46E5,
+        $alpha);
     }
     @else if $var==7 {
-        @return #4338CA;
+        @return rgba(#4338CA,
+        $alpha);
     }
     @else if $var==8 {
-        @return #3730A3;
+        @return rgba(#3730A3,
+        $alpha);
     }
     @else if $var==9 {
-        @return #312E81;
+        @return rgba(#312E81,
+        $alpha);
     }
 }
 
-@function violet($var: 5) {
+@function violet($var: 5,
+$alpha: 1 5) {
     @if $var==0 {
-        @return #F5F3FF;
+        @return rgba(#F5F3FF,
+        $alpha);
     }
     @else if $var==1 {
-        @return #EDE9FE;
+        @return rgba(#EDE9FE,
+        $alpha);
     }
     @else if $var==2 {
-        @return #DDD6FE;
+        @return rgba(#DDD6FE,
+        $alpha);
     }
     @else if $var==3 {
-        @return #C4B5FD;
+        @return rgba(#C4B5FD,
+        $alpha);
     }
     @else if $var==4 {
-        @return #A78BFA;
+        @return rgba(#A78BFA,
+        $alpha);
     }
     @else if $var==5 {
-        @return #8B5CF6;
+        @return rgba(#8B5CF6,
+        $alpha);
     }
     @else if $var==6 {
-        @return #7C3AED;
+        @return rgba(#7C3AED,
+        $alpha);
     }
     @else if $var==7 {
-        @return #6D28D9;
+        @return rgba(#6D28D9,
+        $alpha);
     }
     @else if $var==8 {
-        @return #5B21B6;
+        @return rgba(#5B21B6,
+        $alpha);
     }
     @else if $var==9 {
-        @return #4C1D95;
+        @return rgba(#4C1D95,
+        $alpha);
     }
 }
 
-@function purple($var: 5) {
+@function purple($var: 5,
+$alpha: 1) {
     @if $var==0 {
-        @return #FAF5FF;
+        @return rgba(#FAF5FF,
+        $alpha);
     }
     @else if $var==1 {
-        @return #F3E8FF;
+        @return rgba(#F3E8FF,
+        $alpha);
     }
     @else if $var==2 {
-        @return #E9D5FF;
+        @return rgba(#E9D5FF,
+        $alpha);
     }
     @else if $var==3 {
-        @return #D8B4FE;
+        @return rgba(#D8B4FE,
+        $alpha);
     }
     @else if $var==4 {
-        @return #C084FC;
+        @return rgba(#C084FC,
+        $alpha);
     }
     @else if $var==5 {
-        @return #A855F7;
+        @return rgba(#A855F7,
+        $alpha);
     }
     @else if $var==6 {
-        @return #9333EA;
+        @return rgba(#9333EA,
+        $alpha);
     }
     @else if $var==7 {
-        @return #7E22CE;
+        @return rgba(#7E22CE,
+        $alpha);
     }
     @else if $var==8 {
-        @return #6B21A8;
+        @return rgba(#6B21A8,
+        $alpha);
     }
     @else if $var==9 {
-        @return #581C87;
+        @return rgba(#581C87,
+        $alpha);
     }
 }
 
-@function fuchsia($var: 5) {
+@function fuchsia($var: 5,
+$alpha: 1) {
     @if $var==0 {
-        @return #FDF4FF;
+        @return rgba(#FDF4FF,
+        $alpha);
     }
     @else if $var==1 {
-        @return #FAE8FF;
+        @return rgba(#FAE8FF,
+        $alpha);
     }
     @else if $var==2 {
-        @return #F5D0FE;
+        @return rgba(#F5D0FE,
+        $alpha);
     }
     @else if $var==3 {
-        @return #F0ABFC;
+        @return rgba(#F0ABFC,
+        $alpha);
     }
     @else if $var==4 {
-        @return #E879F9;
+        @return rgba(#E879F9,
+        $alpha);
     }
     @else if $var==5 {
-        @return #D946EF;
+        @return rgba(#D946EF,
+        $alpha);
     }
     @else if $var==6 {
-        @return #C026D3;
+        @return rgba(#C026D3,
+        $alpha);
     }
     @else if $var==7 {
-        @return #A21CAF;
+        @return rgba(#A21CAF,
+        $alpha);
     }
     @else if $var==8 {
-        @return #86198F;
+        @return rgba(#86198F,
+        $alpha);
     }
     @else if $var==9 {
-        @return #701A75;
+        @return rgba(#701A75,
+        $alpha);
     }
 }
 
-@function pink($var: 5) {
+@function pink($var: 5,
+$alpha: 1) {
     @if $var==0 {
-        @return #FDF2F8;
+        @return rgba(#FDF2F8,
+        $alpha);
     }
     @else if $var==1 {
-        @return #FCE7F3;
+        @return rgba(#FCE7F3,
+        $alpha);
     }
     @else if $var==2 {
-        @return #FBCFE8;
+        @return rgba(#FBCFE8,
+        $alpha);
     }
     @else if $var==3 {
-        @return #F9A8D4;
+        @return rgba(#F9A8D4,
+        $alpha);
     }
     @else if $var==4 {
-        @return #F472B6;
+        @return rgba(#F472B6,
+        $alpha);
     }
     @else if $var==5 {
-        @return #EC4899;
+        @return rgba(#EC4899,
+        $alpha);
     }
     @else if $var==6 {
-        @return #DB2777;
+        @return rgba(#DB2777,
+        $alpha);
     }
     @else if $var==7 {
-        @return #BE185D;
+        @return rgba(#BE185D,
+        $alpha);
     }
     @else if $var==8 {
-        @return #9D174D;
+        @return rgba(#9D174D,
+        $alpha);
     }
     @else if $var==9 {
-        @return #831843;
+        @return rgba(#831843,
+        $alpha);
     }
 }
 
-@function rose($var: 5) {
+@function rose($var: 5,
+$alpha: 1) {
     @if $var==0 {
-        @return #FFF1F2;
+        @return rgba(#FFF1F2,
+        $alpha);
     }
     @else if $var==1 {
-        @return #FFE4E6;
+        @return rgba(#FFE4E6,
+        $alpha);
     }
     @else if $var==2 {
-        @return #FECDD3;
+        @return rgba(#FECDD3,
+        $alpha);
     }
     @else if $var==3 {
-        @return #FDA4AF;
+        @return rgba(#FDA4AF,
+        $alpha);
     }
     @else if $var==4 {
-        @return #FB7185;
+        @return rgba(#FB7185,
+        $alpha);
     }
     @else if $var==5 {
-        @return #F43F5E;
+        @return rgba(#F43F5E,
+        $alpha);
     }
     @else if $var==6 {
-        @return #E11D48;
+        @return rgba(#E11D48,
+        $alpha);
     }
     @else if $var==7 {
-        @return #BE123C;
+        @return rgba(#BE123C,
+        $alpha);
     }
     @else if $var==8 {
-        @return #9F1239;
+        @return rgba(#9F1239,
+        $alpha);
     }
     @else if $var==9 {
-        @return #881337;
+        @return rgba(#881337,
+        $alpha);
     }
 }
 
-@function red-after($var: 5) {
-    @return amber($var);
+@function red-after($var: 5,
+$alpha: 1) {
+    @return amber($var,
+    $alpha);
 }
 
-@function orange-after($var: 5) {
-    @return yellow($var);
+@function orange-after($var: 5,
+$alpha: 1) {
+    @return yellow($var,
+    $alpha);
 }
 
-@function amber-after($var: 5) {
-    @return yellow($var);
+@function amber-after($var: 5,
+$alpha: 1) {
+    @return yellow($var,
+    $alpha);
 }
 
-@function yellow-after($var: 5) {
-    @return lime($var);
+@function yellow-after($var: 5,
+$alpha: 1) {
+    @return lime($var,
+    $alpha);
 }
 
-@function lime-after($var: 5) {
-    @return emerald($var);
+@function lime-after($var: 5,
+$alpha: 1) {
+    @return emerald($var,
+    $alpha);
 }
 
-@function green-after($var: 5) {
-    @return teal($var);
+@function green-after($var: 5,
+$alpha: 1) {
+    @return teal($var,
+    $alpha);
 }
 
-@function emerald-after($var: 5) {
-    @return cyan($var);
+@function emerald-after($var: 5,
+$alpha: 1) {
+    @return cyan($var,
+    $alpha);
 }
 
-@function teal-after($var: 5) {
-    @return sky($var);
+@function teal-after($var: 5,
+$alpha: 1) {
+    @return sky($var,
+    $alpha);
 }
 
-@function cyan-after($var: 5) {
-    @return blue($var);
+@function cyan-after($var: 5,
+$alpha: 1) {
+    @return blue($var,
+    $alpha);
 }
 
-@function sky-after($var: 5) {
-    @return indigo($var);
+@function sky-after($var: 5,
+$alpha: 1) {
+    @return indigo($var,
+    $alpha);
 }
 
-@function blue-after($var: 5) {
-    @return violet($var);
+@function blue-after($var: 5,
+$alpha: 1) {
+    @return violet($var,
+    $alpha);
 }
 
-@function indigo-after($var: 5) {
-    @return purple($var);
+@function indigo-after($var: 5,
+$alpha: 1) {
+    @return purple($var,
+    $alpha);
 }
 
-@function violet-after($var: 5) {
-    @return fuchsia($var);
+@function violet-after($var: 5,
+$alpha: 1) {
+    @return fuchsia($var,
+    $alpha);
 }
 
-@function purple-after($var: 5) {
-    @return pink($var);
+@function purple-after($var: 5,
+$alpha: 1) {
+    @return pink($var,
+    $alpha);
 }
 
-@function fuchsia-after($var: 5) {
-    @return rose($var);
+@function fuchsia-after($var: 5,
+$alpha: 1) {
+    @return rose($var,
+    $alpha);
 }
 
-@function pink-after($var: 5) {
-    @return red($var);
+@function pink-after($var: 5,
+$alpha: 1) {
+    @return red($var,
+    $alpha);
 }
 
-@function rose-after($var: 5) {
-    @return orange($var);
+@function rose-after($var: 5,
+$alpha: 1) {
+    @return orange($var,
+    $alpha);
 }
 
-@function amber-before($var: 5) {
-    @return red($var);
+@function amber-before($var: 5,
+$alpha: 1) {
+    @return red($var,
+    $alpha);
 }
 
-@function yellow-before($var: 5) {
-    @return orange($var);
+@function yellow-before($var: 5,
+$alpha: 1) {
+    @return orange($var,
+    $alpha);
 }
 
-@function yellow-before($var: 5) {
-    @return amber($var);
+@function yellow-before($var: 5,
+$alpha: 1) {
+    @return amber($var,
+    $alpha);
 }
 
-@function lime-before($var: 5) {
-    @return yellow($var);
+@function lime-before($var: 5,
+$alpha: 1) {
+    @return yellow($var,
+    $alpha);
 }
 
-@function emerald-before($var: 5) {
-    @return lime($var);
+@function emerald-before($var: 5,
+$alpha: 1) {
+    @return lime($var,
+    $alpha);
 }
 
-@function teal-before($var: 5) {
-    @return green($var);
+@function teal-before($var: 5,
+$alpha: 1) {
+    @return green($var,
+    $alpha);
 }
 
-@function cyan-before($var: 5) {
-    @return emerald($var);
+@function cyan-before($var: 5,
+$alpha: 1) {
+    @return emerald($var,
+    $alpha);
 }
 
-@function sky-before($var: 5) {
-    @return teal($var);
+@function sky-before($var: 5,
+$alpha: 1) {
+    @return teal($var,
+    $alpha);
 }
 
-@function blue-before($var: 5) {
-    @return cyan($var);
+@function blue-before($var: 5,
+$alpha: 1) {
+    @return cyan($var,
+    $alpha);
 }
 
-@function indigo-before($var: 5) {
-    @return sky($var);
+@function indigo-before($var: 5,
+$alpha: 1) {
+    @return sky($var,
+    $alpha);
 }
 
-@function violet-before($var: 5) {
-    @return blue($var);
+@function violet-before($var: 5,
+$alpha: 1) {
+    @return blue($var,
+    $alpha);
 }
 
-@function purple-before($var: 5) {
-    @return indigo($var);
+@function purple-before($var: 5,
+$alpha: 1) {
+    @return indigo($var,
+    $alpha);
 }
 
-@function fuchsia-before($var: 5) {
-    @return violet($var);
+@function fuchsia-before($var: 5,
+$alpha: 1) {
+    @return violet($var,
+    $alpha);
 }
 
-@function pink-before($var: 5) {
-    @return purple($var);
+@function pink-before($var: 5,
+$alpha: 1) {
+    @return purple($var,
+    $alpha);
 }
 
-@function rose-before($var: 5) {
-    @return fuchsia($var);
+@function rose-before($var: 5,
+$alpha: 1) {
+    @return fuchsia($var,
+    $alpha);
 }
 
-@function red-before($var: 5) {
-    @return pink($var);
+@function red-before($var: 5,
+$alpha: 1) {
+    @return pink($var,
+    $alpha);
 }
 
-@function orange-before($var: 5) {
-    @return rose($var);
+@function orange-before($var: 5,
+$alpha: 1) {
+    @return rose($var,
+    $alpha);
 }
 
 @function shadow($i: 3) {
